@@ -787,6 +787,10 @@ video {
   max-width: 1536px;
 }
 
+.max-w-32 {
+  max-width: 8rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -844,6 +848,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-amber-300 {
@@ -918,6 +926,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-0\.5 {

@@ -2,7 +2,7 @@
 {% load static %}
 {% load compress %}
 
-{% block title %} Menu 1 {% endblock %}
+{% block title %} Author {% endblock %}
 
 {% block content %}
 
@@ -12,19 +12,16 @@
     </div>
     <div class="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-blue-400">
         <div class="relative">
-          <img class="w-32 h-32" src="{% static 'img/author.jpg' %}" alt="Profile Image"/>
+          <img class="w-50 h-50" src="{% static 'img/author.jpg' %}" alt="Profile Image"/>
         </div>
         <div class="px-6 py-4">
-          <div class="text-xl font-semibold text-gray-800">John Doe</div>
-          <p class="text-gray-600">Front-end Developer</p>
+          <div class="text-xl font-semibold text-gray-800 font-prompt">ชนภัทร ปาสาบุตร</div>
+          <p class="text-gray-600 font-sarabun">นักศึกษามหาวิทยาลัยอุบลราชธานี มีความชอบในการฟังสปอยหนัง ฟังเพลง</p>
         </div>
         <div class="px-6 py-4">
           <span class="inline-block px-2 py-1 font-semibold text-teal-900 bg-teal-200 rounded-full">Web</span>
-          <span class="inline-block px-2 py-1 font-semibold text-indigo-900 bg-indigo-200 rounded-full">UI/UX</span>
-          <span class="inline-block px-2 py-1 font-semibold text-purple-900 bg-purple-200 rounded-full">Design</span>
-        </div>
-        <div class="px-6 py-4">
-          <a href="#" class="text-blue-500 hover:underline">View Profile</a>
+          <span class="inline-block px-2 py-1 font-semibold text-indigo-900 bg-indigo-200 rounded-full">Python</span>
+          <span class="inline-block px-2 py-1 font-semibold text-purple-900 bg-purple-200 rounded-full">C++</span>
         </div>
       </div>
 
