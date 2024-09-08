@@ -27,31 +27,35 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
 
-
 	<nav class="bg-amber border-amber-300 py-2.5 bg-amber-500 w-full"> 
 		<div class="flex flex-wrap items-center justify-start max-w-screen-xl pl-0 max-w-full"> 
 			<a href="#" class="flex items-center">
-				<img src="{% static 'img/logo.png' %}" class="h-2 mr-3 sm:h-4" alt="logo">
+				<img src="{% static 'img/logo.png' %}" class="h-4 mr-3 sm:h-9" alt="logo">
 			</a>
 			<div class="items-center justify-start w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2"> 
 				<ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
 					<li>
-						<a href="#"
-							class="text-gray-50 font-sarabun pl-0" 
+						<a href="/"
+							class="text-gray-50 font-sarabun" 
 							aria-current="page">หน้าแรก</a>
 					</li>
 					<li>
 						<a href="#"
-							class="text-gray-50 px-0.5 font-sarabun">ตารางเทียบแคลอรี่</a>
+							class="text-gray-50 font-sarabun">ตารางเทียบแคลอรี่</a>
 					</li>
 					<li>
-						<a href="#"
+						<a href="author"
 							class="text-gray-50 font-sarabun">ผู้จัดทำ</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<div class="text-center py-1.5"></div>
+        <p class="text-center py-2.5 font-prompt underline text-2xl">อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</p>
+    </div>
+
 	{% compress css %}
 	<link rel="stylesheet"
 		href="{% static 'src/output.css' %}">
