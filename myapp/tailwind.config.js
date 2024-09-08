@@ -8,7 +8,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				angsana: ["Angsana New"],
-				th_saraban: ["TH SarabunPSK"],
+				th_sarabun: ["TH SarabunPSK"],
 				taviraj: ["Taviraj"]
 			},
 		},
