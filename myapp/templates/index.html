@@ -1,51 +1,54 @@
 {% extends "_base.html" %}
- 
+{% load static %}
+{% load compress %}
+
 {% block title %} Home {% endblock %}
 
 {% block content %}
-<nav class="bg-amber border-amber-300 py-2.5 bg-amber-500 w-full">
-    <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-        <a href="#" class="flex items-center">
-            <img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
-        </a>
-        <div class="flex items-center lg:order-2">
-            <div class="hidden mt-2 mr-4 sm:inline-block">
-                <span></span>
+
+<div class="container mx-auto">
+    <div class="text-center py-6">
+        <p class="text-center py-2.5 font-prompt underline text-2xl">อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-8">
+        <div class="max-w-sm text-center">
+            <img alt="" src="{% static 'menu/01/card-05.jpg' %}" class="h-36 w-36 rounded-full object-cover mx-auto" />
+            <div class="px-4 py-4">
+                <h3 class="font-bold text-xl mb-2 font-mitr">แกงเห็ดเผาะไข่มดแดง</h3>
+                <p class="text-gray-700 text-base font-sarabun">
+                    มีสรรพคุณทางยาช่วยระบายท้องและเจริญอาหาร และ ผักหวานเป็น ผักพื้นบ้านสมุนไพร มีคุณค่าทางโภชนาการสูง เป็นแหล่งของโปรตีน วิตามินซี เบต้าแคโรทีนซึ่งช่วยในการมองเห็น บำรุงสายตา และมีสรรพคุณเป็นสารต้านอนุมูลอิสระ ช่วยป้องกันโรคมะเร็ง โรคหัวใจขาดเลือด โรคเบาหวานและ โรคความดันโลหิตสูง มี แคลเซียม และฟอสฟอรัสสูง ช่วยบำรุงกระดูก และฟันให้แข็งแรง และมีเส้นใยอาหารช่วยในการขับถ่ายได้ 
+                </p>
+                <div class="py-4">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">
+                    เรียนรู้เพิ่มเติม
+                  </button>
+                </div>
             </div>
-            <button data-collapse-toggle="mobile-menu-2" type="button"
-				class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-				aria-controls="mobile-menu-2" aria-expanded="true">
-				<span class="sr-only">Open main menu</span>
-				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd"
-						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-						clip-rule="evenodd"></path>
-				</svg>
-				<svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd"
-						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-						clip-rule="evenodd"></path>
-				</svg>
-			</button>
         </div>
-        <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                <li>
-                    <a href="#"
-                        class="text-gray-50 font-th_sarabun size-fit" 
-                        aria-current="page">หน้าแรก</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-gray-50 px-0.5">Company</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-gray-50">Marketplace</a>
-                </li>
-            </ul>
+
+        <div class="max-w-sm text-center">
+            <img alt="" src="{% static 'menu/02/card-03.jpg' %}" class="h-36 w-36 rounded-full object-cover mx-auto" />
+            <div class="px-4 py-4">
+                <h3 class="font-bold text-xl mb-2 font-mitr">หมี่กะทิ</h3>
+                <p class="text-gray-700 text-base font-sarabun">
+                    มีคุณค่าทางสมุนไพรสูงมีใยอาหารสูง มีวิตามินและเกลือแร่ที่สำคัญอยู่ในส่วนประกอบของอาหารและในส่วนที่เป็นเครื่องเคียง อาหารพื้นเมือง อุดมด้วยพืชผักสมุนไพรมากมายหลายชนิดซึ่งมีสรรพคุณทางยาจากสารพฤกษเคมี จึงมีคุณสมบัติในการรักษาสุขภาพให้เป็นปกติกับปรับปรุงสุขภาพให้ดีขึ้นและลดอัตราเสี่ยงต่อการเกิดโรค 
+                </p>
+
+            </div>
+        </div>
+
+        <div class="max-w-sm text-center">
+            <img alt="" src="{% static 'menu/03/card-04.jpg' %}" class="h-36 w-36 rounded-full object-cover mx-auto" />
+            <div class="px-4 py-4">
+                <h3 class="font-bold text-xl mb-2 font-mitr">หลนเค็มบักนัด</h3>
+                <p class="text-gray-700 text-base font-sarabun">
+                    ใช้ส่วนผสมหลัก คือ เนื้อปลา ซึ่งปลาที่นำมาเป็นเค็มบักนัด ส่วนใหญ่จะเลือกใช้เนื้อปลาเทโพหรือปลาสวายติดหนัง นำมาหั่นเป็นชิ้นบางๆ เป็นปลาจากแม่น้ำมูลที่ได้จากผืนดินของจังหวัดอุบลราชธานี แล้วนำมาคลุกเคล้ากับเกลือ เป็น “ เกลือสินเธาว์” จะเป็นเกลือจากที่อื่นหรือ “เกลือจากทะเล” ไม่ได้เป็นอันขาด ถ้านำมาใช้จะเกิดการ “เน่าบูด เสียหาย” ไม่เป็น “เค็มบักนัด” ตามที่ต้องการ และหมากนัดก็ต้องเป็น”หมากนัดหม้อ” จากสวนในจังหวัดอุบลราชธานี 
+                </p>
+
+            </div>
         </div>
     </div>
-</nav>
+</div>
 
 {% endblock content %}
