@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% load static %}
+{% load compress %}
+
+{% block title %} Menu 1 {% endblock %}
+
+{% block content %}
+
+<div class="container mx-auto">
+	<div class="text-center py-1.5"></div>
+        <p class="text-center py-2.5 font-prompt underline text-2xl">อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-8">
+        <div class="max-w-screen-2xl text-center">
+            <img alt="" src="{% static 'menu/02/f0301.jpg' %}" class="object-cover mx-auto" />
+            <div class="px-4 py-4">
+                <h3 class="font-bold text-xl mb-2 font-mitr">แกงเห็ดเผาะไข่มดแดง</h3>
+                <p class="text-gray-700 text-base font-sarabun">
+                    หมี่กะทิ เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่น มีความโดดเด่นและมีเอกลักษณ์เฉพาะที่มีความประณีตสวยงาม หมี่กะทิของอุบลราชธานีจะไม่ใช้เส้นหมี่เหมือนภาคกลาง เนื่องจากชาวอีสาน จะทำเส้นก๋วยเตี๋ยวขึ้นเอง ซึ่งเรียกว่า "หมี่" คล้ายกับเส้นเล็กของทางภาคกลาง แต่จะเป็นเส้นที่ตากแห้ง และขดเป็นวงกลม เช่นเดียวกับเส้นจันท์ เมื่อทำหมี่กะทิ ต้องนำเส้นหมี่ไปแช่น้ำให้คลายตัว แล้วลวกด้วยน้ำเดือดจนเส้นนุ่ม สำหรับเครื่องปรุงหมี่กะทิอุบลนั้นใช้ส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่น ผัดกับเครื่องโขลกจากพริกแกงกับกะทิ ใส่หมูสับ เต้าเจี้ยว น้ำมะขามเปียก น้ำตาลปึก เกลือป่น ผัดเครื่องปรุงทั้งหมดให้เข้ากันดี เมื่อรับประทานจัดใส่จานตักราดด้วยน้ำปรุงรสหมี่กะทิเข้มข้น มีรสชาติที่หวานมันกลมกล่อม ราดบนเส้น หมี่ 
+                </p>
+                <div class="flex space-x-1 w-full mx-4 py-4">
+                    <img alt="" src="{% static 'menu/02/f0302.jpg' %}" class="w-1/2 object-contain" style="max-height: 280px;"/>
+                    <img alt="" src="{% static 'menu/02/f0303.jpg' %}" class="w-1/2 object-contain" style="max-height: 280px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

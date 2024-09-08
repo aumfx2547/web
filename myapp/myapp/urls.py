@@ -17,10 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import index, menu1
+from .views import index, menu1, menu2, menu3, author
 
 urlpatterns = [
     path('', index, name='index'),
     path('admin/', admin.site.urls),
     path('menu1/', menu1, name='menu1'),
+    path('menu2/', menu2, name='menu2'),
+    path('menu3/', menu3, name='menu3'),
+    path('author/', author, name='author'),
 ]
